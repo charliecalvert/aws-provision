@@ -21,7 +21,7 @@ if (NO_COMMAND_SPECIFIED) {
 
 if (program.create) {
     console.log('peppers');
-    const awsInstanceParams = getAwsInstanceParams.awsCharlie();
+    const awsInstanceParams = getAwsInstanceParams.awsStandard();
     createInstance(awsInstanceParams);
 }
 
