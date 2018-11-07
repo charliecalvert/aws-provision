@@ -31,7 +31,7 @@ function showAwsEducateCredentials() {
     });
 }
 
-function showAwsCharlieConfiguration() {
+function showAwsStandardConfiguration() {
     AWS.config.loadFromPath(process.env.HOME + '/.aws/config.json');
     console.log(AWS.config);
 }
@@ -45,8 +45,8 @@ module.exports.awsEducate = () => {
     return getInstanceParams(awsParams);
 };
 
-module.exports.awsCharlie = () => {
-    showAwsCharlieConfiguration();
+module.exports.awsStandard = () => {
+    showAwsStandardConfiguration();
     awsParams.ImageId = 'ami-0bbe6b35405ecebdb';
     awsParams.KeyName = <KEY_NAME>;
     awsParams.SecurityGroupIds = [<SECURITY_GROUP_ID>];
